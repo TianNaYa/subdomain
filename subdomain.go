@@ -10,7 +10,7 @@ import (
 func main() {
 
 	var url string
-	flag.StringVar(&url, "url", "默认值", "说明")
+	flag.StringVar(&url, "url", "", "")
 	flag.Parse()
 
 	c := colly.NewCollector(
